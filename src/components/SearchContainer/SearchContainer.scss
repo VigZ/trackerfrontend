@@ -1,0 +1,67 @@
+@import '../../variables.scss';
+
+.searchRow {
+  display: flex;
+  justify-content: center;
+  padding: 103px 0 103px 0;
+  background-color: $grey;
+
+  form {
+    height: 50px;
+    input {
+      height: 100%;
+      width: 665px;
+      color: $primaryTint;
+      padding-left: 20px;
+      outline:none;
+      -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    input::placeholder {
+      color: $primaryTint;
+    }
+  }
+
+  button {
+    width: 158px;
+    margin-left: 5px;
+    color: $grey;
+    background-color: $primaryTint;
+    border-color: $primaryTint;
+    border-radius: 9999px;
+    font-weight: 700;
+    outline:none;
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.sideBySide {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  :first-child {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .resultsList {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 398px;
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+
+.card:hover {
+  background-color: $secondaryColor;
+  -webkit-transition: background-color 1s; /* Safari prior 6.1 */
+  transition: background-color 1s;
+}
+.resultCard {
+  display: inline-block;
+
+  .card-left {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
+    .card-image {
+      border-radius: 5%;
+      max-width: 200px;
+    }
+
+  }
+
+  .card-body {
+    display: inline-block;
+  }
+}
+
+
+a.resultLink {
+  text-decoration: none;
+}
+
+.card-name, .card-text {
+  color: $primaryTint;
+}
+
+.card-name {
+  display: block !important
+}

@@ -1,0 +1,9 @@
+.mapWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+
+  div:first-child {
+    position: relative !important;
+  }
+}
